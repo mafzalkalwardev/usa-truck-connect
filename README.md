@@ -25,7 +25,7 @@ npx serve .
 
 1. Push to `main` branch
 2. Enable GitHub Pages: Settings → Pages → Source: `main` / root
-3. Live at: `https://<username>.github.io/usa-truck-connect/`
+3. Live at: [https://mafzalkalwardev.github.io/usa-truck-connect/](https://mafzalkalwardev.github.io/usa-truck-connect/)
 
 ## Custom Domain
 
