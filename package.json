@@ -1,0 +1,26 @@
+{
+  "name": "usa-truck-connect",
+  "version": "1.0.0",
+  "description": "Professional affiliate marketing website for Google Workspace + Google Voice sign-up rewards",
+  "private": false,
+  "scripts": {
+    "serve": "npx serve .",
+    "screenshots": "node scripts/capture-screenshots.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafzalkalwardev/usa-truck-connect.git"
+  },
+  "keywords": [
+    "google-workspace",
+    "google-voice",
+    "affiliate-marketing",
+    "trucking",
+    "static-site"
+  ],
+  "author": "USA Truck Connect",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
