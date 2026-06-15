@@ -139,26 +139,45 @@ npm run screenshots
 
 ## 🌐 Deployment
 
-### Hostinger + mightytrucking.online (production)
+### mightytrucking.online via GitHub Pages (recommended)
 
-1. Log in to [Hostinger](https://www.hostinger.com) → **Websites** → your plan (free or paid static hosting).
-2. Open **File Manager** → `public_html` (or the folder tied to `mightytrucking.online`).
-3. Upload **all project files** from this repo (HTML, `css/`, `js/`, `assets/`, `.nojekyll` is optional on Hostinger).
-4. In Hostinger **Domains**, point `mightytrucking.online` to this hosting (nameservers or A record — Hostinger wizard handles this).
-5. Enable **Free SSL** (Let’s Encrypt) in the control panel so the site loads over `https://`.
-6. Visit **https://mightytrucking.online** and hard-refresh.
+**Live URLs after DNS propagates:**
+- https://mightytrucking.online
+- https://www.mightytrucking.online
 
-> **Tip:** Set up `usamightytrucking@gmail.com` for affiliate inquiries before go-live.
+The repo includes a `CNAME` file for the custom domain. Update DNS in Hostinger as follows:
 
-### GitHub Pages (staging / backup)
+#### Step 1 — Remove parking records
 
-Site can also deploy from `main` on the GitHub repo:
+Delete the current records that point to Hostinger parking:
 
-1. Push to `main`
-2. **Settings → Pages** → source: `main` branch, root folder
-3. Staging URL: **https://mafzalkalwardev.github.io/mighty-trucking/**
+| Type | Name | Content | Action |
+|------|------|---------|--------|
+| A | `@` | `2.57.91.91` | **Delete** |
+| CNAME | `www` | `mightytrucking.online` | **Delete** |
 
-Optional custom domain on GitHub Pages: add a `CNAME` file containing `mightytrucking.online` and set DNS at Hostinger (only if you are **not** using Hostinger file hosting for the same domain).
+#### Step 2 — Add GitHub Pages records
+
+| Type | Name | Content | TTL |
+|------|------|---------|-----|
+| A | `@` | `185.199.108.153` | 300 |
+| A | `@` | `185.199.109.153` | 300 |
+| A | `@` | `185.199.110.153` | 300 |
+| A | `@` | `185.199.111.153` | 300 |
+| CNAME | `www` | `mafzalkalwardev.github.io` | 300 |
+
+> Keep nameservers as Hostinger (`ns1.dns-parking.com` / `ns2.dns-parking.com`) — only change the **DNS records** above.
+
+#### Step 3 — GitHub (already configured on push)
+
+1. Repo **Settings → Pages → Custom domain** → `mightytrucking.online`
+2. Enable **Enforce HTTPS** once the certificate is issued (can take up to 24 hours)
+
+DNS propagation usually takes **15 minutes to 48 hours**.
+
+### GitHub Pages staging URL
+
+Until DNS propagates, the site is also at: **https://mafzalkalwardev.github.io/mighty-trucking/**
 
 ---
 
