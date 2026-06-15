@@ -196,7 +196,9 @@ See [Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Securit
 
 ## 📬 Contact
 
-**Email:** [hello@usatruckconnect.com](mailto:hello@usatruckconnect.com)
+**Email:** [usatruckconnect@gmail.com](mailto:usatruckconnect@gmail.com) · [hello@usatruckconnect.com](mailto:hello@usatruckconnect.com)
+
+**Office:** 47 W 13th St, New York, NY 10011, USA
 
 ---
 
