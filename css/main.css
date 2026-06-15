@@ -1,4 +1,4 @@
-/* USA Truck Connect — Main Stylesheet */
+/* Mighty Trucking — Main Stylesheet */
 
 *, *::before, *::after {
   margin: 0;
@@ -68,87 +68,24 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 body {
   font-family: var(--font-display);
-  background: var(--bg);
-  color: var(--text);
+  background-color: #F1F5F9;
+  color: #0F172A;
   overflow-x: hidden;
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Force readable text on all light sections — fixes OS dark-mode bleed */
-.section,
-.section-alt,
-.section-gray,
-.cta-section,
-.card-modern,
-.form-card,
-.faq-item,
-.faq-question,
-.faq-answer,
-.wizard-product-card,
-.wizard-panel,
-.testimonial-card,
-.step-modern,
-.trust-badge,
-.checklist li,
-.legal-content,
-.thank-you-hero,
-.note-box {
-  color: var(--text);
+body.has-sticky-cta {
+  padding-bottom: 70px;
 }
-
-.section p,
-.section-alt p,
-.card-modern p,
-.wizard-product-card p,
-.faq-answer p,
-.section-header p {
-  color: var(--text-secondary);
-}
-
-.section-title {
-  color: var(--text) !important;
-}
-
-.page-hero .section-title,
-.hero-video-wrapper .section-title,
-.thank-you-hero .section-title,
-.walkthrough-container .section-title {
-  color: transparent !important;
-}
-
-.section-title--on-dark {
-  color: var(--text-light) !important;
-  background: linear-gradient(135deg, #fff, var(--accent-300));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
-}
-
-.page-hero h1,
-.hero-video-wrapper h1,
-.walkthrough-header h3 {
-  color: transparent;
-}
-
-.card-modern h3,
-.wizard-product-card h3 {
-  color: var(--text);
-  margin-bottom: 0.5rem;
-}
-
-.link-accent,
-a.link-accent {
+a.link-accent,
+.link-accent {
   color: var(--google-blue);
   font-weight: 600;
   text-decoration: none;
@@ -176,10 +113,6 @@ a.link-accent {
   font-weight: 800;
 }
 
-body.has-sticky-cta {
-  padding-bottom: 70px;
-}
-
 .bg-overlay-pattern {
   position: fixed;
   inset: 0;
@@ -188,7 +121,7 @@ body.has-sticky-cta {
     radial-gradient(ellipse 80% 50% at 20% -10%, rgba(26, 115, 232, 0.06), transparent 50%),
     radial-gradient(ellipse 60% 40% at 90% 10%, rgba(245, 158, 11, 0.05), transparent 45%),
     radial-gradient(ellipse 50% 30% at 50% 100%, rgba(30, 142, 62, 0.04), transparent 50%),
-    var(--bg);
+    #F1F5F9;
   pointer-events: none;
 }
 
@@ -529,6 +462,10 @@ h1 {
 .page-hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .page-hero p {
@@ -617,6 +554,21 @@ h1 {
 /* Cards & Sections */
 .section {
   padding: 5rem 0;
+  position: relative;
+  z-index: 1;
+  background-color: #F8FAFC;
+}
+
+.section-alt {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+}
+
+.section-gray {
+  background: linear-gradient(180deg, #E2E8F0 0%, #F1F5F9 100%);
+}
+
+.cta-section {
+  background: linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%);
 }
 
 .section-header {
@@ -639,22 +591,13 @@ h1 {
 .testimonial-author {
   margin-top: 1rem;
   font-weight: 600;
-  color: var(--text);
-}
-
-.section-alt {
-  background: linear-gradient(180deg, var(--bg-elevated) 0%, #F8FAFC 100%);
-}
-
-.section-gray {
-  background: var(--bg-muted);
-  background: linear-gradient(180deg, #E2E8F0 0%, #F1F5F9 100%);
+  color: #0F172A;
 }
 
 .section-header p {
   max-width: 700px;
   margin: 1.2rem auto 0;
-  color: var(--text-secondary);
+  color: #475569;
   font-size: 1.05rem;
 }
 
@@ -663,7 +606,7 @@ h1 {
   font-weight: 700;
   position: relative;
   display: inline-block;
-  color: var(--text);
+  color: #0F172A;
   letter-spacing: -0.02em;
 }
 
@@ -679,14 +622,25 @@ h1 {
 }
 
 .card-modern {
-  background: var(--bg-elevated);
+  background: #FFFFFF;
   border-radius: var(--radius-xl);
   transition: all var(--transition-slow);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(15, 23, 42, 0.08);
   box-shadow: var(--shadow-sm);
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  color: #0F172A;
+}
+
+.card-modern h3 {
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.card-modern p,
+.card-modern li {
+  color: #475569;
 }
 
 .card-modern::before {
@@ -774,16 +728,6 @@ h1 {
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--google-green);
-}
-
-.note-box {
-  background: #fff7e5;
-  border-radius: var(--radius-sm);
-  padding: 0.8rem 1rem;
-}
-
-.note-box-blue {
-  background: #eef2ff;
 }
 
 /* Google Product Logos Row */
@@ -950,11 +894,7 @@ h1 {
   height: 100%;
   object-fit: cover;
   min-height: 320px;
-}
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  min-height: 320px;
+  display: block;
 }
 
 .img-frame {
@@ -965,34 +905,104 @@ h1 {
 }
 
 .offer-card-light {
-  background: var(--bg-elevated) !important;
+  background: #FFFFFF !important;
 }
 
 .offer-card-light,
 .offer-card-light p,
+.offer-card-light h3,
+.offer-card-light strong {
+  color: #475569 !important;
+}
+
 .offer-card-light h3 {
-  color: var(--text) !important;
+  color: #0F172A !important;
+}
+
+/* Dark featured reward card */
+.card-reward {
+  background: linear-gradient(145deg, #111827 0%, #1E293B 100%) !important;
+  color: #F8FAFC !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.card-reward p,
+.card-reward li {
+  color: #CBD5E1 !important;
+}
+
+.card-reward strong {
+  color: #F8FAFC !important;
+}
+
+.card-reward .reward-amount {
+  color: #34A853 !important;
+}
+
+.card-reward .wizard-checklist li {
+  color: #E2E8F0 !important;
+}
+
+.card-reward .note-box {
+  background: rgba(245, 158, 11, 0.12) !important;
+  color: #FEF3C7 !important;
+  border-color: rgba(245, 158, 11, 0.25) !important;
+}
+
+.card-reward .mt-2 {
+  color: #CBD5E1 !important;
+}
+
+.card-reward .mt-2 span {
+  color: #F8FAFC !important;
+}
+
+.offer-card-light .note-box-blue {
+  color: #1E3A8A !important;
 }
 
 .faq-question {
-  color: var(--text) !important;
+  color: #0F172A !important;
+  background-color: #FFFFFF !important;
 }
 
-.wizard-step-btn {
-  color: var(--text);
-  background: var(--bg-elevated);
+.faq-item {
+  background: #FFFFFF !important;
 }
 
-.wizard-step-btn.active {
-  color: var(--google-blue);
-}
-
-.wizard-step-btn.completed {
-  color: var(--google-green);
+.faq-answer p {
+  color: #475569 !important;
 }
 
 .wizard-checklist li {
-  color: var(--text-secondary);
+  color: #475569 !important;
+}
+
+.wizard-product-card {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+.wizard-product-card h3 {
+  color: #0F172A !important;
+}
+
+.wizard-step-btn {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
+}
+
+.wizard-step-btn.active {
+  color: var(--google-blue) !important;
+  border-color: var(--google-blue) !important;
+  background: #EFF6FF !important;
+}
+
+.wizard-step-btn.completed {
+  color: var(--google-green) !important;
+  border-color: rgba(30, 142, 62, 0.35) !important;
+  background: #F0FDF4 !important;
 }
 
 .mock-caption {
@@ -1803,8 +1813,8 @@ footer {
 .cta-spaced { margin-left: 0; }
 .link-accent { color: var(--google-blue); font-weight: 600; text-decoration: none; }
 .link-accent:hover { text-decoration: underline; }
-.cta-section { background: linear-gradient(180deg, #EFF6FF 0%, var(--bg-elevated) 100%); }
-.text-secondary { color: var(--text-secondary); }
+.cta-section { background: linear-gradient(180deg, #EFF6FF 0%, #FFFFFF 100%); }
+.text-secondary { color: #475569; }
 
 /* Responsive */
 @media (max-width: 800px) {
@@ -1855,4 +1865,115 @@ footer {
   body.has-sticky-cta {
     padding-bottom: 70px;
   }
+}
+
+/* ── Light-surface readability (forced contrast) ── */
+.section p,
+.section li,
+.section-alt p,
+.section-alt li,
+.section-gray p,
+.section-gray li,
+.cta-section p {
+  color: #475569;
+}
+
+.section h2,
+.section h3,
+.section-alt h2,
+.section-alt h3,
+.section-gray h2,
+.section-gray h3,
+.cta-section h2 {
+  color: #0F172A;
+}
+
+.section strong,
+.section-alt strong,
+.section-gray strong {
+  color: #0F172A;
+}
+
+.mission-content p {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.mission-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mission-stats > div {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.mission-stats strong {
+  color: #0F172A;
+  font-weight: 700;
+}
+
+.mission-stats i {
+  color: var(--accent-400);
+  margin-right: 0.35rem;
+}
+
+.text-secondary {
+  color: #475569 !important;
+}
+
+.note-box {
+  color: #78350F;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.note-box-blue {
+  color: #1E3A8A;
+  border: 1px solid rgba(26, 115, 232, 0.2);
+}
+
+.product-logos--light .plus-sign {
+  color: #64748B;
+}
+
+.gv-logo-panel {
+  padding: 1rem;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+.gv-logo-panel .gv-brand {
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #FFFFFF;
+  color: #0F172A;
+}
+
+.testimonial-card p {
+  color: #475569;
+}
+
+.step-modern {
+  background: #FFFFFF;
+  color: #0F172A;
+}
+
+.step-modern p {
+  color: #475569;
+}
+
+.form-card {
+  background: #FFFFFF;
+  color: #0F172A;
+}
+
+.form-group label {
+  color: #0F172A;
 }

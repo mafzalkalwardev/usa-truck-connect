@@ -21,7 +21,7 @@ Examples of unacceptable behavior:
 
 ## Enforcement
 
-Project maintainers may remove, edit, or reject contributions that violate this Code of Conduct. Report issues to [hello@usatruckconnect.com](mailto:hello@usatruckconnect.com).
+Project maintainers may remove, edit, or reject contributions that violate this Code of Conduct. Report issues to [info@mightytrucking.online](mailto:info@mightytrucking.online).
 
 ## Attribution
 

@@ -14,6 +14,6 @@
       }
     })
     .catch(function () {
-      footerHost.innerHTML = '<footer class="site-footer"><div class="container footer-bottom"><p>© 2025 USA Truck Connect</p></div></footer>';
+      footerHost.innerHTML = '<footer class="site-footer"><div class="container footer-bottom"><p>© 2025 Mighty Trucking</p></div></footer>';
     });
 })();

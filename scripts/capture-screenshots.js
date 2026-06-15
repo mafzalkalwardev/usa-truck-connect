@@ -7,7 +7,7 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const BASE = process.env.SCREENSHOT_BASE || 'https://mafzalkalwardev.github.io/usa-truck-connect';
+const BASE = process.env.SCREENSHOT_BASE || 'https://mightytrucking.online';
 const OUT = path.join(__dirname, '..', 'docs', 'screenshots');
 
 const pages = [

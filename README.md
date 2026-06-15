@@ -1,12 +1,12 @@
 <div align="center">
 
-# 🚛 USA Truck Connect
+# 🚛 Mighty Trucking
 
 **Professional affiliate marketing website for Google Workspace + Google Voice sign-up rewards**
 
 *Earn $40 per verified sign-up · Built for CDL drivers, trucking companies & USA businesses*
 
-[![Live Site](https://img.shields.io/badge/Live_Site-GitHub_Pages-1A73E8?style=for-the-badge&logo=github&logoColor=white)](https://mafzalkalwardev.github.io/usa-truck-connect/)
+[![Live Site](https://img.shields.io/badge/Live-mightytrucking.online-F59E0B?style=for-the-badge)](https://mightytrucking.online/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -29,7 +29,9 @@
 
 A production-grade, multi-page static affiliate website that helps American CDL drivers and business owners earn **$40 cash rewards** for each verified **Google Workspace + Google Voice** sign-up. The site features live counters, scroll animations, an interactive 5-step setup wizard, and an auto-playing process walkthrough — all with zero backend required.
 
-**Live demo:** [https://mafzalkalwardev.github.io/usa-truck-connect/](https://mafzalkalwardev.github.io/usa-truck-connect/)
+**Production domain:** [https://mightytrucking.online](https://mightytrucking.online) *(Hostinger — deploy when ready)*
+
+**Staging (GitHub Pages):** [https://mafzalkalwardev.github.io/mighty-trucking/](https://mafzalkalwardev.github.io/mighty-trucking/)
 
 ---
 
@@ -121,8 +123,8 @@ Typography: **Inter** (Google Fonts) · Animations: **AOS** · Icons: **Font Awe
 
 ```bash
 # Clone
-git clone https://github.com/mafzalkalwardev/usa-truck-connect.git
-cd usa-truck-connect
+git clone https://github.com/mafzalkalwardev/mighty-trucking.git
+cd mighty-trucking
 
 # Serve locally
 npx serve .
@@ -137,31 +139,36 @@ npm run screenshots
 
 ## 🌐 Deployment
 
-### GitHub Pages (current)
+### Hostinger + mightytrucking.online (production)
 
-Site deploys automatically from `main` branch:
+1. Log in to [Hostinger](https://www.hostinger.com) → **Websites** → your plan (free or paid static hosting).
+2. Open **File Manager** → `public_html` (or the folder tied to `mightytrucking.online`).
+3. Upload **all project files** from this repo (HTML, `css/`, `js/`, `assets/`, `.nojekyll` is optional on Hostinger).
+4. In Hostinger **Domains**, point `mightytrucking.online` to this hosting (nameservers or A record — Hostinger wizard handles this).
+5. Enable **Free SSL** (Let’s Encrypt) in the control panel so the site loads over `https://`.
+6. Visit **https://mightytrucking.online** and hard-refresh.
+
+> **Tip:** Set up `usamightytrucking@gmail.com` for affiliate inquiries before go-live.
+
+### GitHub Pages (staging / backup)
+
+Site can also deploy from `main` on the GitHub repo:
 
 1. Push to `main`
-2. GitHub Pages serves from root
-3. Live at: **https://mafzalkalwardev.github.io/usa-truck-connect/**
+2. **Settings → Pages** → source: `main` branch, root folder
+3. Staging URL: **https://mafzalkalwardev.github.io/mighty-trucking/**
 
-### Custom domain
-
-Add a `CNAME` file with your domain and configure DNS:
-
-```
-CNAME  www  mafzalkalwardev.github.io
-```
+Optional custom domain on GitHub Pages: add a `CNAME` file containing `mightytrucking.online` and set DNS at Hostinger (only if you are **not** using Hostinger file hosting for the same domain).
 
 ---
 
 ## 📦 Releases
 
-See [Releases](https://github.com/mafzalkalwardev/usa-truck-connect/releases) for versioned snapshots of the site.
+See [Releases](https://github.com/mafzalkalwardev/mighty-trucking/releases) for versioned snapshots of the site.
 
 | Version | Date | Highlights |
 |---------|------|------------|
-| [v1.0.0](https://github.com/mafzalkalwardev/usa-truck-connect/releases/tag/v1.0.0) | Jun 2025 | Initial release — 9 pages, wizard, live counters, GitHub Pages |
+| [v1.0.0](https://github.com/mafzalkalwardev/mighty-trucking/releases/tag/v1.0.0) | Jun 2025 | Initial release — 9 pages, wizard, live counters |
 
 ---
 
@@ -188,7 +195,7 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDU
 
 ## ⚖️ Legal
 
-Google Workspace and Google Voice are trademarks of **Google LLC**. USA Truck Connect is an **independent affiliate program** — not affiliated with, endorsed by, or sponsored by Google.
+Google Workspace and Google Voice are trademarks of **Google LLC**. Mighty Trucking is an **independent affiliate program** — not affiliated with, endorsed by, or sponsored by Google.
 
 See [Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Security Policy](SECURITY.md)
 
@@ -196,7 +203,7 @@ See [Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Securit
 
 ## 📬 Contact
 
-**Email:** [usatruckconnect@gmail.com](mailto:usatruckconnect@gmail.com) · [hello@usatruckconnect.com](mailto:hello@usatruckconnect.com)
+**Email:** [usamightytrucking@gmail.com](mailto:usamightytrucking@gmail.com)
 
 **Office:** 47 W 13th St, New York, NY 10011, USA
 
@@ -204,6 +211,6 @@ See [Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Securit
 
 <div align="center">
 
-© 2025 USA Truck Connect — Bridging global trucking with USA connectivity
+© 2025 Mighty Trucking — Bridging global trucking with USA connectivity
 
 </div>

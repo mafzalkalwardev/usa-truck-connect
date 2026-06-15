@@ -1,7 +1,7 @@
 {
-  "name": "usa-truck-connect",
-  "version": "1.0.0",
-  "description": "Professional affiliate marketing website for Google Workspace + Google Voice sign-up rewards",
+  "name": "mighty-trucking",
+  "version": "1.1.0",
+  "description": "Mighty Trucking — affiliate marketing site for Google Workspace + Google Voice (mightytrucking.online)",
   "private": false,
   "scripts": {
     "serve": "npx serve .",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafzalkalwardev/usa-truck-connect.git"
+    "url": "https://github.com/mafzalkalwardev/mighty-trucking.git"
   },
   "keywords": [
     "google-workspace",
@@ -18,7 +18,7 @@
     "trucking",
     "static-site"
   ],
-  "author": "USA Truck Connect",
+  "author": "Mighty Trucking",
   "license": "MIT",
   "devDependencies": {
     "playwright": "^1.49.0"

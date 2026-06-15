@@ -1,11 +1,11 @@
-# Contributing to USA Truck Connect
+# Contributing to Mighty Trucking
 
 Thank you for your interest in contributing! This is a static affiliate marketing website — contributions are welcome for UI improvements, accessibility, documentation, and bug fixes.
 
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/usa-truck-connect.git`
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/mighty-trucking.git`
 3. Serve locally: `npm run serve` or `npx serve .`
 4. Create a branch: `git checkout -b feature/your-feature`
 
