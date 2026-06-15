@@ -68,6 +68,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
 }
 
 body {
@@ -78,6 +79,101 @@ body {
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force readable text on all light sections — fixes OS dark-mode bleed */
+.section,
+.section-alt,
+.section-gray,
+.cta-section,
+.card-modern,
+.form-card,
+.faq-item,
+.faq-question,
+.faq-answer,
+.wizard-product-card,
+.wizard-panel,
+.testimonial-card,
+.step-modern,
+.trust-badge,
+.checklist li,
+.legal-content,
+.thank-you-hero,
+.note-box {
+  color: var(--text);
+}
+
+.section p,
+.section-alt p,
+.card-modern p,
+.wizard-product-card p,
+.faq-answer p,
+.section-header p {
+  color: var(--text-secondary);
+}
+
+.section-title {
+  color: var(--text) !important;
+}
+
+.page-hero .section-title,
+.hero-video-wrapper .section-title,
+.thank-you-hero .section-title,
+.walkthrough-container .section-title {
+  color: transparent !important;
+}
+
+.section-title--on-dark {
+  color: var(--text-light) !important;
+  background: linear-gradient(135deg, #fff, var(--accent-300));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+}
+
+.page-hero h1,
+.hero-video-wrapper h1,
+.walkthrough-header h3 {
+  color: transparent;
+}
+
+.card-modern h3,
+.wizard-product-card h3 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.link-accent,
+a.link-accent {
+  color: var(--google-blue);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.link-accent:hover {
+  color: var(--google-blue-dark);
+  text-decoration: underline;
+  transform: translateX(2px);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.slots-urgent {
+  color: var(--google-red);
+  font-weight: 800;
 }
 
 body.has-sticky-cta {
@@ -732,10 +828,118 @@ h1 {
   height: 36px;
 }
 
-.product-logo-label {
-  font-size: 0.875rem;
-  font-weight: 600;
+.product-logo-wrap--voice {
+  background: #000;
+  padding: 0.5rem 1rem;
+}
+
+.product-logo-voice-full {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo-sm {
+  height: 24px;
+  opacity: 0.9;
+}
+
+.footer-logo-voice {
+  height: 28px;
+  background: #000;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.footer-address {
+  margin-top: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-on-dark);
+  font-size: 0.9rem;
+}
+
+.footer-address i,
+.footer-col a i {
+  color: var(--accent-400);
+  margin-right: 0.35rem;
+  width: 16px;
+}
+
+.footer-map {
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  box-shadow: var(--shadow-lg);
+}
+
+.footer-map iframe {
+  display: block;
+  filter: grayscale(20%) contrast(1.05);
+}
+
+.trucking-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 320px;
+}
+
+.img-frame {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+
+.offer-card-light {
+  background: var(--bg-elevated) !important;
+}
+
+.offer-card-light,
+.offer-card-light p,
+.offer-card-light h3 {
+  color: var(--text) !important;
+}
+
+.faq-question {
+  color: var(--text) !important;
+}
+
+.wizard-step-btn {
+  color: var(--text);
+  background: var(--bg-elevated);
+}
+
+.wizard-step-btn.active {
+  color: var(--google-blue);
+}
+
+.wizard-step-btn.completed {
+  color: var(--google-green);
+}
+
+.wizard-checklist li {
   color: var(--text-secondary);
+}
+
+.mock-caption {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.mock-step-label {
+  margin-left: 1rem;
+  font-weight: 600;
+  color: var(--text);
 }
 
 .plus-sign {
@@ -1514,6 +1718,7 @@ footer {
 .link-accent { color: var(--google-blue); font-weight: 600; text-decoration: none; }
 .link-accent:hover { text-decoration: underline; }
 .cta-section { background: linear-gradient(180deg, #EFF6FF 0%, var(--bg-elevated) 100%); }
+.text-secondary { color: var(--text-secondary); }
 
 /* Responsive */
 @media (max-width: 800px) {
@@ -1563,49 +1768,5 @@ footer {
 
   body.has-sticky-cta {
     padding-bottom: 70px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #0f1a22;
-    color: var(--text-light);
-  }
-
-  .card-modern,
-  .testimonial-card,
-  .step-modern,
-  .faq-item,
-  .form-card,
-  .trust-badge,
-  .checklist li,
-  .wizard-step-btn {
-    background: #1e2a36;
-    color: #f0f4f9;
-    border-color: #2a3a48;
-  }
-
-  .note-box {
-    background: #2a2a1f;
-    color: #ffefcf;
-  }
-
-  .section-title {
-    color: #ffdd99;
-  }
-
-  .bg-overlay-pattern {
-    background-image: radial-gradient(circle at 20% 30%, rgba(255,180,71,0.1) 2%, transparent 2.5%);
-  }
-
-  .form-input,
-  .form-select {
-    background: #1e2a36;
-    border-color: #2a3a48;
-    color: #f0f4f9;
-  }
-
-  .faq-question:hover {
-    background: #2a3a48;
   }
 }

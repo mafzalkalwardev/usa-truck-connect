@@ -43,9 +43,8 @@
         <img src="assets/logos/google-workspace.svg" alt="Google Workspace" class="product-logo">
       </div>
       <span class="plus-sign" aria-hidden="true">+</span>
-      <div class="product-logo-wrap">
-        <img src="assets/logos/google-voice.png" alt="Google Voice" class="product-logo-voice">
-        <span class="product-logo-label">Google Voice</span>
+      <div class="product-logo-wrap product-logo-wrap--voice">
+        <img src="assets/logos/google-voice-logo.png" alt="Google Voice" class="product-logo-voice-full">
       </div>
     </div>
   </div>
@@ -58,7 +57,7 @@
         <div class="card-modern">
           <h3>Before You Submit</h3>
           <p class="mt-1">Make sure you've completed the Google Workspace + Voice setup. Need help?</p>
-          <a href="how-it-works.html" style="color: var(--google-blue); font-weight: 600;">View step-by-step guide →</a>
+          <a href="how-it-works.html" class="link-accent">View step-by-step guide →</a>
           <ul class="wizard-checklist mt-2">
             <li>Google Workspace Business Starter active</li>
             <li>Google Voice add-on enabled</li>
@@ -76,6 +75,7 @@
             <input type="hidden" name="_subject" value="New Affiliate Lead - USA Truck Connect">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you for joining USA Truck Connect! We received your application and will review your Google Workspace + Voice verification within 1-2 business days. Your $40 reward will be processed within 5-7 days after approval.">
             <input type="hidden" name="_next" id="formNextUrl" value="">
             <div class="form-group">
               <label><i class="fas fa-user"></i> Full Name *</label>
@@ -120,13 +120,49 @@
   </div>
 </section>
 
-<footer>
+<footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-col"><h4>USA Truck Connect</h4><p>Bridging global trucking with USA connectivity.</p></div>
-      <div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="offer.html">Offer</a><a href="how-it-works.html">How It Works</a><a href="join.html">Join</a></div>
-      <div class="footer-col"><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
-      <div class="footer-col"><h4>Contact</h4><a href="mailto:hello@usatruckconnect.com">hello@usatruckconnect.com</a></div>
+      <div class="footer-col footer-brand">
+        <h4>USA Truck Connect</h4>
+        <p>Bridging global trucking with USA connectivity through Google Workspace + Voice.</p>
+        <div class="footer-logos">
+          <img src="assets/logos/google-workspace.svg" alt="Google Workspace" class="footer-logo-sm">
+          <img src="assets/logos/google-voice-logo.png" alt="Google Voice" class="footer-logo-voice">
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="offer.html">Offer</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="join.html">Join</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:usatruckconnect@gmail.com"><i class="fas fa-envelope"></i> usatruckconnect@gmail.com</a>
+        <a href="mailto:hello@usatruckconnect.com"><i class="fas fa-envelope"></i> hello@usatruckconnect.com</a>
+        <p class="footer-address"><i class="fas fa-map-marker-alt"></i> 47 W 13th St<br>New York, NY 10011, USA</p>
+      </div>
+    </div>
+    <div class="footer-map">
+      <iframe
+        title="USA Truck Connect office location"
+        src="https://maps.google.com/maps?q=47+W+13th+St,+New+York,+NY+10011,+USA&hl=en&z=16&output=embed"
+        width="100%"
+        height="220"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
     <div class="footer-bottom">
       <p><i class="fab fa-google"></i> Google Workspace and Google Voice are trademarks of Google LLC. Independent affiliate program.</p>
@@ -135,6 +171,9 @@
   </div>
 </footer>
 
+<div class="sticky-cta-bar">
+  <a href="join.html"><i class="fas fa-gift"></i> Claim $40 Reward</a>
+</div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 <script>
@@ -157,7 +196,8 @@
           return;
         }
         successDiv.style.display = 'block';
-        successDiv.innerHTML = '<i class="fas fa-check-circle"></i> Thanks ' + nameField.value + '! Redirecting...';
+        successDiv.innerHTML = '<i class="fas fa-check-circle"></i> <strong>Success!</strong> Thanks ' + nameField.value + '! Your application was submitted. Check your email for confirmation — redirecting...';
+        setTimeout(function () { form.querySelector('.form-submit').disabled = true; }, 100);
       });
     }
   })();
