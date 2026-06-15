@@ -10,7 +10,7 @@
 
 If you discover a security vulnerability, please **do not** open a public issue.
 
-Email **info@mightytrucking.online** with:
+Email **usamightytrucking@gmail.com** with:
 
 - Description of the vulnerability
 - Steps to reproduce

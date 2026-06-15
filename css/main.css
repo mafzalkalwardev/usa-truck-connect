@@ -369,8 +369,9 @@ a.link-accent,
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.4;
-  filter: brightness(0.7) contrast(1.1);
+  opacity: 0.45;
+  filter: brightness(0.65) contrast(1.1) saturate(1.05);
+  pointer-events: none;
 }
 
 .hero-overlay {

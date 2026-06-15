@@ -21,7 +21,16 @@ const pages = [
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
-  const browser = await chromium.launch();
+  const launchOptions = { headless: true };
+  try {
+    launchOptions.channel = 'msedge';
+  } catch (_) { /* fallback below */ }
+  let browser;
+  try {
+    browser = await chromium.launch(launchOptions);
+  } catch {
+    browser = await chromium.launch({ headless: true });
+  }
   const context = await browser.newContext({
     viewport: { width: 1440, height: 900 },
     deviceScaleFactor: 2,
