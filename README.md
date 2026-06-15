@@ -1,15 +1,19 @@
 <div align="center">
 
+<img src="docs/screenshots/home.png" alt="Mighty Trucking — Home page" width="100%" style="max-width: 960px; border-radius: 12px;">
+
 # Mighty Trucking
 
 **Google Workspace + Google Voice affiliate program for USA truckers & logistics professionals**
 
-Earn **$40 per verified sign-up** · Live at **[mightytrucking.online](https://mightytrucking.online)**
+Earn **$40 per verified sign-up** · **[mightytrucking.online](https://mightytrucking.online)**
 
-[![Live Site](https://img.shields.io/badge/Live-mightytrucking.online-F59E0B?style=for-the-badge)](https://mightytrucking.online/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-0B1120?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mafzalkalwardev/mighty-trucking)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Contact](https://img.shields.io/badge/Email-usamightytrucking%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:usamightytrucking@gmail.com)
+<br>
+
+[![Live Site](https://img.shields.io/badge/🌐_Live-mightytrucking.online-F59E0B?style=for-the-badge)](https://mightytrucking.online/)
+[![GitHub](https://img.shields.io/badge/Repo-mighty--trucking-0B1120?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mafzalkalwardev/mighty-trucking)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+[![Email](https://img.shields.io/badge/📧_Contact-usamightytrucking%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:usamightytrucking@gmail.com)
 
 </div>
 
@@ -17,33 +21,39 @@ Earn **$40 per verified sign-up** · Live at **[mightytrucking.online](https://m
 
 ## Overview
 
-**Mighty Trucking** is a production-ready, multi-page affiliate website that helps American CDL drivers and business owners earn **$40 cash rewards** for each verified **Google Workspace + Google Voice** sign-up. Built as a static site with zero backend — deployed on **GitHub Pages** with custom domain **mightytrucking.online**.
+**Mighty Trucking** is a production-ready affiliate website helping American CDL drivers and business owners earn **$40 cash rewards** for each verified **Google Workspace + Google Voice** sign-up.
 
 | | |
 |---|---|
 | **Live site** | [https://mightytrucking.online](https://mightytrucking.online) |
+| **GitHub Pages** | [mafzalkalwardev.github.io/mighty-trucking](https://mafzalkalwardev.github.io/mighty-trucking/) |
 | **Contact** | [usamightytrucking@gmail.com](mailto:usamightytrucking@gmail.com) |
 | **Reward** | $40 per verified sign-up |
-| **Plan cost** | $12/user/month (Workspace + Voice) |
+| **Monthly plan** | $12/user (Workspace + Voice) |
 
 ---
 
 ## Screenshots
 
-<table>
-<tr>
-<td width="50%"><strong>Home</strong><br>Hero, live stats, Google product logos<br><br><a href="https://mightytrucking.online/"><img src="docs/screenshots/home.png" alt="Mighty Trucking home page" width="100%"></a></td>
-<td width="50%"><strong>Offer</strong><br>$40 reward breakdown & FAQ<br><br><a href="https://mightytrucking.online/offer.html"><img src="docs/screenshots/offer.png" alt="Mighty Trucking offer page" width="100%"></a></td>
-</tr>
-<tr>
-<td width="50%"><strong>How It Works</strong><br>Interactive 5-step wizard<br><br><a href="https://mightytrucking.online/how-it-works.html"><img src="docs/screenshots/how-it-works.png" alt="Mighty Trucking how it works" width="100%"></a></td>
-<td width="50%"><strong>Join</strong><br>Affiliate signup form<br><br><a href="https://mightytrucking.online/join.html"><img src="docs/screenshots/join.png" alt="Mighty Trucking join form" width="100%"></a></td>
-</tr>
-<tr>
-<td width="50%"><strong>About</strong><br>Mission & trucking imagery<br><br><a href="https://mightytrucking.online/about.html"><img src="docs/screenshots/about.png" alt="Mighty Trucking about page" width="100%"></a></td>
-<td width="50%"><strong>Testimonials</strong><br>Social proof & case studies<br><br><a href="https://mightytrucking.online/testimonials.html"><img src="docs/screenshots/testimonials.png" alt="Mighty Trucking testimonials" width="100%"></a></td>
-</tr>
-</table>
+> Captured from the live site at **mightytrucking.online** — June 2025
+
+### Home · Offer
+
+| Home — hero, live stats & CTAs | Offer — $40 reward & FAQ |
+|:---:|:---:|
+| [<img src="docs/screenshots/home.png" alt="Home page" width="440">](https://mightytrucking.online/) | [<img src="docs/screenshots/offer.png" alt="Offer page" width="440">](https://mightytrucking.online/offer.html) |
+
+### How It Works · Join
+
+| Interactive 5-step wizard | Affiliate signup form |
+|:---:|:---:|
+| [<img src="docs/screenshots/how-it-works.png" alt="How It Works" width="440">](https://mightytrucking.online/how-it-works.html) | [<img src="docs/screenshots/join.png" alt="Join form" width="440">](https://mightytrucking.online/join.html) |
+
+### About · Testimonials
+
+| Mission & trucking imagery | Social proof & case studies |
+|:---:|:---:|
+| [<img src="docs/screenshots/about.png" alt="About page" width="440">](https://mightytrucking.online/about.html) | [<img src="docs/screenshots/testimonials.png" alt="Testimonials" width="440">](https://mightytrucking.online/testimonials.html) |
 
 ---
 
@@ -53,41 +63,47 @@ Earn **$40 per verified sign-up** · Live at **[mightytrucking.online](https://m
 |---------|-------------|
 | **9-page site** | Home, About, Offer, How It Works, Testimonials, Join, Thank You, Privacy, Terms |
 | **Live stats bar** | Slots remaining, sign-ups today, payout countdown |
-| **Interactive wizard** | 5-step Google Workspace + Voice setup guide |
+| **Interactive wizard** | Step-by-step Google Workspace + Voice setup |
 | **Animated walkthrough** | Auto-playing signup-to-payout demo |
-| **FormSubmit.co** | Lead capture → `usamightytrucking@gmail.com` |
-| **Responsive design** | Mobile sticky CTA, collapsible nav, accessible contrast |
-| **Custom domain** | `mightytrucking.online` via GitHub Pages + Hostinger DNS |
+| **FormSubmit.co** | Leads delivered to **usamightytrucking@gmail.com** |
+| **Local assets** | Trucking photos hosted in-repo — no broken hotlinks |
+| **Custom domain** | `mightytrucking.online` on GitHub Pages + Hostinger DNS |
+| **Accessible UI** | High-contrast text, semantic HTML, mobile responsive |
 
 ---
 
 ## Tech Stack
 
-- **HTML5** semantic markup · **CSS3** design system (`css/main.css`)
-- **Vanilla JavaScript** — nav, FAQ, wizard, live counters, animations
-- **AOS** scroll animations · **Font Awesome 6** · **Inter** (Google Fonts)
-- **Assets** — local trucking photos (`assets/images/`), Google logos (`assets/logos/`)
+| Layer | Tools |
+|-------|-------|
+| Markup | HTML5 semantic pages |
+| Styles | CSS3 design system — `css/main.css` |
+| Scripts | Vanilla JS — nav, FAQ, wizard, counters, animations |
+| UI | AOS · Font Awesome 6 · Inter (Google Fonts) |
+| Forms | [FormSubmit.co](https://formsubmit.co) → Gmail |
+| Hosting | GitHub Pages + custom domain |
 
 ---
 
 ## Project Structure
 
 ```
-├── index.html              # Home — hero, live counters, CTAs
-├── about.html              # Mission, partner stats, trucking photos
-├── offer.html              # $40 reward, pricing, FAQ accordion
-├── how-it-works.html       # Wizard + animated walkthrough
-├── testimonials.html       # Social proof
-├── join.html               # Affiliate signup form
-├── thank-you.html          # Post-submit confirmation
-├── privacy.html / terms.html
-├── CNAME                   # mightytrucking.online
-├── css/main.css            # Design tokens & components
-├── js/                     # main, counters, wizard, animations
+mighty-trucking/
+├── index.html                 # Home
+├── about.html                 # Mission & partner stats
+├── offer.html                 # $40 reward + FAQ
+├── how-it-works.html          # Wizard + walkthrough
+├── testimonials.html          # Reviews
+├── join.html                  # Signup form
+├── thank-you.html             # Confirmation
+├── privacy.html · terms.html
+├── CNAME                      # mightytrucking.online
+├── css/main.css
+├── js/                        # main, counters, wizard, animations
 ├── assets/
-│   ├── images/             # Local trucking photography
-│   └── logos/              # Mighty Trucking + Google brand assets
-└── docs/screenshots/       # README preview images
+│   ├── images/                # Local trucking photography
+│   └── logos/                 # Mighty Trucking + Google logos
+└── docs/screenshots/          # README previews (auto-captured)
 ```
 
 ---
@@ -101,35 +117,40 @@ npx serve .
 # → http://localhost:3000
 ```
 
-Refresh screenshots after visual changes:
+Refresh README screenshots after visual changes:
 
 ```bash
 npm install
-SCREENSHOT_BASE=https://mightytrucking.online npm run screenshots
+npm run screenshots
 ```
 
 ---
 
 ## Deployment
 
-**Production:** [mightytrucking.online](https://mightytrucking.online) — GitHub Pages with `CNAME` + Hostinger DNS (4× GitHub A records + `www` CNAME → `mafzalkalwardev.github.io`).
+| Environment | URL |
+|-------------|-----|
+| **Production** | [mightytrucking.online](https://mightytrucking.online) |
+| **GitHub Pages** | [mafzalkalwardev.github.io/mighty-trucking](https://mafzalkalwardev.github.io/mighty-trucking/) |
 
-**Mirror:** [mafzalkalwardev.github.io/mighty-trucking](https://mafzalkalwardev.github.io/mighty-trucking/)
+Push to `main` → GitHub Pages auto-deploys. Custom domain via `CNAME` + Hostinger DNS (4× GitHub A records, `www` CNAME → `mafzalkalwardev.github.io`).
 
 ---
 
-## Form Handling
+## Form & Contact
 
-Signup form on `join.html` posts to [FormSubmit.co](https://formsubmit.co) → **usamightytrucking@gmail.com**
+All inquiries and form submissions go to one address:
 
-| Field | Purpose |
-|-------|---------|
+**[usamightytrucking@gmail.com](mailto:usamightytrucking@gmail.com)**
+
+| Form field | Purpose |
+|------------|---------|
 | Full Name, Email | Contact & onboarding |
 | Workspace Domain | Verification |
 | Voice Number | USA phone confirmation |
 | Payout Method | PayPal / Venmo / ACH |
 
-Redirect after submit: `thank-you.html`
+Post-submit redirect: `thank-you.html`
 
 ---
 
@@ -137,18 +158,13 @@ Redirect after submit: `thank-you.html`
 
 Google Workspace and Google Voice are trademarks of **Google LLC**. Mighty Trucking is an **independent affiliate program** — not affiliated with, endorsed by, or sponsored by Google.
 
-[Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Security](SECURITY.md)
-
----
-
-## Contact
-
-**Email:** [usamightytrucking@gmail.com](mailto:usamightytrucking@gmail.com)  
-**Office:** 47 W 13th St, New York, NY 10011, USA
+[Privacy Policy](privacy.html) · [Terms of Service](terms.html) · [Security](SECURITY.md) · [Contributing](CONTRIBUTING.md)
 
 ---
 
 <div align="center">
+
+**47 W 13th St, New York, NY 10011, USA**
 
 © 2025 Mighty Trucking — Bridging global trucking with USA connectivity
 

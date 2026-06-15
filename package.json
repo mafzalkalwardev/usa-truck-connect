@@ -1,11 +1,12 @@
 {
   "name": "mighty-trucking",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Mighty Trucking — affiliate marketing site for Google Workspace + Google Voice (mightytrucking.online)",
   "private": false,
   "scripts": {
     "serve": "npx serve .",
-    "screenshots": "node scripts/capture-screenshots.js"
+    "screenshots": "node scripts/capture-screenshots.js",
+    "verify": "node scripts/verify-live.js"
   },
   "repository": {
     "type": "git",
